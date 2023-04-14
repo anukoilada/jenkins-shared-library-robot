@@ -4,7 +4,7 @@ ef call() {
         env.APP_TYPE = "python" 
         common.lintChecks()
         env.ARGS="-Dsonar.sources=."
-        common.sonarChecks()
+        common.SonarChecks()
         common.testCases()
         common.artifacts()
     }
