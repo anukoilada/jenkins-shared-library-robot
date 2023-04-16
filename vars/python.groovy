@@ -1,4 +1,4 @@
-ef call() {
+def call() {
     node {
         git branch: 'main', url: "https://github.com/anukoilada/${COMPONENT}.git"
         env.APP_TYPE = "python" 
