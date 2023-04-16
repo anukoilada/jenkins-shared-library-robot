@@ -25,7 +25,7 @@ def call() {
 //             SONAR = credentials('SONAR') 
 //             NEXUS = credentials('NEXUS')
 //             SONAR_URL = "172.31.0.157"
-//             NEXUS_URL = "172.31.14.33"
+//             NEXUS_URL = "172.31.1.154"
 //         }
 
 //         stages {
@@ -71,7 +71,7 @@ def call() {
 //             when { expression { env.TAG_NAME != null } }
 //             steps {
 //                 script {
-//                         env.UPLOAD_STATUS=sh(returnStdout: true, script: 'curl -L -s http://172.31.14.33:8081/service/rest/repository/browse/${COMPONENT} | grep ${COMPONENT}-${TAG_NAME}.zip || true')
+//                         env.UPLOAD_STATUS=sh(returnStdout: true, script: 'curl -L -s http://172.31.1.154:8081/service/rest/repository/browse/${COMPONENT} | grep ${COMPONENT}-${TAG_NAME}.zip || true')
 //                         print UPLOAD_STATUS
 //                     }
 //                 }
